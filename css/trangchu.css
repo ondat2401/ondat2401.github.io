@@ -331,8 +331,6 @@ a:hover {color:#ff7c02;}
 }
 .hinhlon{
     position: relative;
-    margin: auto;
-    z-index: 0;
     width: 100%;
     background-image: url(../img/slideshow_2.png);
     height: 36vw;
@@ -473,4 +471,7 @@ a:hover {color:#ff7c02;}
 }
 #form-button:hover{
     background-color: #5a5858;
+}
+#hh:hover{
+    border: solid 1px rgb(220, 220, 220);
 }

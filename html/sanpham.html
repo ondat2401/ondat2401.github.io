@@ -19,7 +19,7 @@
                 <img src="../img/lg.png" height="150px">
             </a>
         </div>
-        <a href="../html/giohang.html">
+        <a data-target="#modalgiohang" data-toggle="modal">
             <div id="giohang"  >
                 <center><i class="fa fa-shopping-bag fa-2x" ></i></center>
             </div>
@@ -76,7 +76,7 @@
                         <div class="sp-hang">
                             <div class="sp-hinhsp">
                                 <a href="" data-toggle="modal" data-target="#myModal1">
-                                    <img src="../img/ao1.jpg" alt="" class="sp-h1"  >
+                                    <img src="../img/ao1.jpg" alt="" class="sp-h1">
                                     <img src="../img/ao1sau.jpg"  alt="" class="sp-h2" >
                                 </a>
                                 <div class="sp-tensp">
@@ -402,6 +402,28 @@
 </footer> 
 </div>
 <!------------------------------------------------------------------------------------------------------->
+<div id="modalgiohang" class="modal fade" role="dialog"> 
+    <div class="modal-dialog">
+        <div class="modal-content" role="document">
+            <div class="modal-header" style="background-color: rgb(43, 42, 42) ; color: #ff7c02;">
+                <center><h3>Sản phẩm trong giỏ</h3></center>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered" id="tblgio">
+                    <tr>
+                        <td>Sản phẩm</td>
+                        <td>Thông tin</td>
+                        <td>Số lượng</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a href="../html/giohang.html">Đi đến giỏ hàng <i class="fa fa-reply"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
     <div class="modal-dialog">
         <div class="modal-content" role="document">
@@ -411,15 +433,15 @@
                 </div>
             </div>
             <div class="modal-body">
-                <form action="">
+                <form action="" onsubmit="themvaogiohang()">
                 <div class="col-12">
                     <div class="form-group">
                         <div class="form-group row">
                             <div class="col-sm-5">
-                                <img src="../img/ao1.jpg" alt="" width="100%">
+                                <img src="../img/ao1.jpg" alt="" width="100%" id="ao1">
                             </div>
                             <div class="col-sm-7">
-                                <span style="color: red; font-size: 25px;">350.000<u>đ</u></span>
+                                <span style="color: red; font-size: 25px;" id="tt1">350.000<u>đ</u></span>
                                 <hr>
                                 <label for="size" >Kích thước</label>
                                 <select name="size" id="size" class="form-control" style="width: 50%;">
@@ -429,14 +451,16 @@
                                     <option value="">XL</option>
                                 </select>
                                 <label for="number">Số lượng</label>
-                                <input type="number" name="number"class="form-control" style="width: 20%;" >
+                                <input type="number" name="number"class="form-control" style="width: 20%;" id="sl1" >
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <center><button id="form-button" class="form-control" style="width: 35%; height: 50px; background-color: rgb(43, 42, 42); color: #ff7c02;" >
-                            <i class="fa fa-shopping-cart" style="font-size:20px;float: left; background-color: ;"></i>
-                            <b style="float: right;">Thêm vào giỏ hàng</b></button>
+                        <center>
+                            <button id="form-button" class="form-control" style="width: 35%; height: 50px; background-color: rgb(43, 42, 42); color: #ff7c02;" >
+                                <i class="fa fa-shopping-cart" style="font-size:20px;float: left; background-color: ;"></i>
+                                <b style="float: right;">Thêm vào giỏ hàng</b>
+                            </button>
                             <span>Hoặc xem <a href="" style="color: #ff7c02; text-decoration: none;">chi tiết</a></span>
                         </center>
                     </div>

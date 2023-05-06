@@ -64,7 +64,7 @@
                             <input type="submit" value="Đăng nhập" id="btn-dangnhap" class="form-control" style="margin-bottom: 10px; background-color: #ff7c02;color: white;">
                         </div>
                         
-                        <a href="" style="font-size: 10px;color: black;"><span>Quên mật khẩu?</span></a>
+                        <a href="" style="font-size: 10px;color: black;"  data-toggle="modal" data-target="#quenmk"><span>Quên mật khẩu?</span></a>
                     </form>
                     
             </div>
@@ -163,7 +163,35 @@
                                     <div class="col-sm-12">
                                             <input type="submit" id="btn-dangky" value="Đăng kí" onclick="ktTaikhoan2()" class="form-control" style="margin-bottom: 10px; background-color: #ff7c02;color: white; ">
                                     </div>
-                                    <center><a href="" style="font-size: 10px;color: black;"><span>Quên mật khẩu?</span></a></center>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <div id="quenmk" class="modal fade" role="dialog"> 
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: rgb(43, 42, 42) ; color: #ff7c02;">
+                    <div class="form-group">
+                        <CENTer><h3>Quên mật khẩu?</h3></CENTer>
+                    </div>
+                </div>
+                <div class="modal-body" >
+                    <form onsubmit="checkquenmk()">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <div class="row col-12" style="margin: auto; width: 300px; padding: 10px; border: solid 1px rgb(166, 163, 163);">
+                                <form>
+                                    <input type="text" placeholder="Tài khoản" id="usernameq" class="form-control" style="margin-bottom: 10px;" >
+                                    <input type="email" placeholder="Email" id="emailq" class="form-control" style="margin-bottom: 10px;" >
+                                    <div class="col-sm-12">
+                                            <input type="submit" value="Kiểm tra mật khẩu" class="form-control" style="margin-bottom: 10px; background-color: #ff7c02;color: white; ">
+                                    </div>
                                 </form> 
                             </div>
                         </div>

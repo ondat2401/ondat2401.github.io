@@ -2,14 +2,11 @@
     margin:0px;
     padding:0px;
 }
-#wrapper a{
+#container a{
     text-decoration: none;
 }
-#wrapper{
-    height: auto;
-    width:100%;
-    margin:auto;
-    color:rgb(0, 0, 0);
+#container{
+    width: 100%;
 }
 header{
     width:100%;
@@ -27,19 +24,20 @@ hr{
     background-color: #000000;
 }
 .giuatrang{
-    margin-left: 135px;
     height: auto;
-    margin-right: 135px;
+    margin-left:80px ;
+    width: 94%;
+    padding-bottom: 100px;
 }
 .block{
     color: rgb(255, 255, 255);
-    width: 265px;
+    width: 260px;
     height: auto;
     display: inline-block;
     margin-top: 50px;
     margin-bottom: 150px;
-    margin-right:22px;
-    margin-left: 22px;
+    margin-right:50px;
+    margin-left: 30px;
 }
 
 .hinhsp{
@@ -107,10 +105,7 @@ hr{
     margin-bottom: 150px;
 }
 .chuyentrang{
-    width: 120px;
     text-align: center;
-    margin-left:45% ;
-    margin-top: 100px;
 }
 .chuyentrang p{
     font-size: 25px;

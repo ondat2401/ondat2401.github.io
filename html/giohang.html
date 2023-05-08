@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
     <script src="../js/sanpham.js"></script>
+    <script src="../js/giohang.js"></script>
 </head>
 <div id="container">
     <header>
@@ -51,20 +52,14 @@
         </div>
     </nav>
 <!------------------------------------------------------------------------------------------------>
-<body >
-    <h3 style="margin-left: 135px; padding-top: 50px;">GIỎ HÀNG</h3>
-    <center>
-        
-        <!-- <table class="table table-bordered" id="cart-items">
-            
-        </table> -->
-        <p id="ergiohang" style="margin-bottom: 15px;">Không có mục nào trong giỏ hàng!</p>
-        <table class="tblgiohang">
-        </table>
-        
-        <a href="../html/sanpham.html"><i class="fa fa-reply" style="margin-bottom: 15px;"></i> Tiếp tục mua hàng</a>
-    </center>
-
+<body onload="displayCartItems()">
+    <div class="cart-list-container">
+        <h3 style="margin-left: 135px; padding-top: 50px;">GIỎ HÀNG</h3>
+            <div id="cart-list"> <p>Chưa có sản phẩm nào</p></div>
+            <center>
+                <a href="../html/sanpham.html"><i class="fa fa-reply" style="margin-bottom: 15px;"></i> Tiếp tục mua hàng</a>
+            </center>
+    </div>
 </body>
 <!------------------------------------------------------------------------------------------------>
 <footer class="footer" >

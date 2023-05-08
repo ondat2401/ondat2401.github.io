@@ -75,10 +75,7 @@ function saveRegistrationInfo(e) {
       };
     alert("Đăng ký thành công");
     users.push(user);
-    localStorage.setItem("users", JSON.stringify(users));
-    // var json=JSON.stringify(user);
-    // localStorage.setItem(username,json);
-    // Lưu thông tin vào Local Storage
+    localStorage.setItem("users", JSON.stringify(users)); 
     
 }
 function checkLogin(e) {

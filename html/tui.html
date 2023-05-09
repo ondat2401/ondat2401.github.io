@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../css/trangchu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/js.js"></script>
+    <script src="../js/giohang.js"></script>
 </head>
 <div id="wrapper">
     <header>
@@ -19,8 +20,8 @@
                 <img src="../img/lg.png" height="150px">
             </a>
         </div>
-        <a data-target="#modalgiohang" data-toggle="modal">
-            <div id="giohang"  >
+        <a href="../html/giohang.html">
+            <div id="giohang">
                 <center><i class="fa fa-shopping-bag fa-2x" ></i></center>
             </div>
         </a>    
@@ -70,7 +71,7 @@
             </li>
         </div>
         <div class="sp-body-sanpham" style="padding-bottom: 50px;">
-            <h3>Túi, Balo Nike chính hãng</h3>
+            <h3 id="productname">Túi, Balo Nike chính hãng</h3>
                 <div class="modal-body">
                 <form action="" onsubmit="themvaogiohang()">
                 <div class="col-12">
@@ -82,17 +83,17 @@
                             </div>
                             
                             <div class="col-sm-5">
-                                <span style="color: red; font-size: 25px;" id="tt1">450.000<u>đ</u></span>
+                                <span style="color: red; font-size: 25px;" id="tt1">450000</span>
                                 <hr>
                                 <label for="size" >Loại</label>
-                                <select name="size" id="size" class="form-control" style="width: 50%;">
-                                    <option value="">Balo Nike</option>
-                                    <option value="">Túi đeo chéo Nike</option>
-                                    <option value="">Túi nhỏ Nike</option>
+                                <select name="size1" id="size" class="form-control" style="width: 50%;">
+                                    <option value="Balo Nike">Balo Nike</option>
+                                    <option value="Túi đeo chéo Nike">Túi đeo chéo Nike</option>
+                                    <option value="Túi nhỏ Nike">Túi nhỏ Nike</option>
                                 </select>
                                 <label for="color">Màu sắc</label>
                                 <select name="color" class="form-control" style="width: 50%;">
-                                    <option value="">Đen Nike</option>
+                                    <option value="Đen Nike">Đen Nike</option>
                                 </select>
                                 <label for="number">Số lượng</label>
                                 <input type="number" name="number"class="form-control" style="width: 20%;" id="sl1" >

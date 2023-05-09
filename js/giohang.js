@@ -22,7 +22,7 @@ function themvaogiohang() {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   
     // Chuyển hướng người dùng đến trang giỏ hàng
-    window.location.href = "../html/giohang.html"
+    window.location.href="../html/giohang.html";
   }
 
   function displayCartItems() {
